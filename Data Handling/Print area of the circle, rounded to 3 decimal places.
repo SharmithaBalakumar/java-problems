@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        float radius, area;
+        radius = sc.nextFloat();
+        area = 3.14159f * radius * radius;
+        System.out.printf("%.3f", area);
+    }
+}
