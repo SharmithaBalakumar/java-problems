@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[]) 
+    {
+        Scanner sc = new Scanner(System.in);
+        float num1 = sc.nextFloat(); // Declaration of a float variable 'num1'
+        int num2 = sc.nextInt(); // Declaration of an integer variable 'num2'
+        System.out.printf("%." + num2 + "f", num1); // Displaying the value of 'num1' with the specified precision 'num2'
+    }
+}
