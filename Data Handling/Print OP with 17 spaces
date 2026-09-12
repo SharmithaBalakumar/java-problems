@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main
+{
+    public static void main(String args[]) 
+    {
+        Scanner sc = new Scanner(System.in);
+        long num1, num2;
+        // Taking input from the user
+        num1 = sc.nextLong();
+        num2 = sc.nextLong();
+    
+        // Printing the two numbers with required spacing
+        System.out.printf("%d%17d\n", num1, num2);
+    }
+}
