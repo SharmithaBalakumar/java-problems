@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class BMICalculator {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Accept the weight of the person in kg
+        double weight = input.nextDouble();
+
+        // Accept the height of the person in meters
+        double height = input.nextDouble();
+
+        // Calculate the BMI
+        double bmi = weight / (height * height);
+
+        // Display the BMI
+        System.out.printf("BMI = %.2f", bmi);
+    }
+}
