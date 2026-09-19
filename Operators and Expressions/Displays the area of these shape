@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Main {
+    static final double PI = 3.14159;
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double radius, length, width, base, height;
+
+        // Read input for circle
+        radius = sc.nextDouble();
+
+        // Read input for rectangle
+        length = sc.nextDouble();
+        width = sc.nextDouble();
+
+        // Read input for triangle
+        base = sc.nextDouble();
+        height = sc.nextDouble();
+
+        // Calculate areas
+        double areaCircle = PI * radius * radius;
+        double areaRectangle = length * width;
+        double areaTriangle = 0.5 * base * height;
+
+        // Display results
+        System.out.printf("Area of a Circle: %.5f\n", areaCircle);
+        System.out.printf("Area of a Rectangle: %.1f\n", areaRectangle);
+        System.out.printf("Area of a Triangle: %.1f\n", areaTriangle);
+
+        sc.close();
+    }
+}
