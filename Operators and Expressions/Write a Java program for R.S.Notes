@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int amount;
+
+        amount = sc.nextInt();
+
+        // Calculate breakdown of notes
+        int[] denominations = {100, 50, 20, 10, 5, 2, 1};
+        int[] numNotes = new int[7];
+
+        for (int i = 0; i < 7; i++) {
+            numNotes[i] = amount / denominations[i];
+            amount %= denominations[i];
+        }
+
+        for (int i = 0; i < 7; i++) {
+            System.out.printf("%d Note(s) of %d.00\n", numNotes[i], denominations[i]);
+        }
+
+        sc.close();
+    }
+}
