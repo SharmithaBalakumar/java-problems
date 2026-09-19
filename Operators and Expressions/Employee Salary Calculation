@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String employeeID;
+        int hoursWorked;
+        int amountPerHour;
+
+        employeeID = sc.next();
+
+        hoursWorked = sc.nextInt();
+
+        amountPerHour = sc.nextInt();
+
+        int salary = hoursWorked * amountPerHour;
+
+        System.out.println("Employee's ID = " + employeeID);
+        System.out.printf("Salary = Rs. %.2f\n", (float) salary);
+
+        sc.close();
+    }
+}
