@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int ageYears;
+
+        // Read input
+        ageYears = sc.nextInt();
+
+        // Calculate age in different units
+        int ageMonths = ageYears * 12;
+        int ageDays = ageYears * 365;
+        int ageHours = ageDays * 24;
+        long ageSeconds = (long) ageHours * 3600;
+
+        // Display results
+        System.out.println("Ages in Months: " + ageMonths);
+        System.out.println("Ages in Days: " + ageDays);
+        System.out.println("Ages in Hours: " + ageHours);
+        System.out.println("Ages in Seconds: " + ageSeconds);
+
+        sc.close();
+    }
+}
