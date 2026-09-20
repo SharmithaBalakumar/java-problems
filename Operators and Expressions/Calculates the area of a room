@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        float length, width;
+
+        // Read input
+        length = sc.nextFloat();
+        width = sc.nextFloat();
+
+        // Calculate area in square feet
+        float areaSquareFeet = length * width;
+
+        // Convert area to square yards
+        float areaSquareYards = areaSquareFeet / 9.0f;
+
+        // Display result rounded to 2 decimal places
+        System.out.printf("%.2f\n", areaSquareYards);
+
+        sc.close();
+    }
+}
