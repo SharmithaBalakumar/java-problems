@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        float length, width, height, pricePerGallon, squareFeetPerGallon;
+
+        // Read input
+        length = sc.nextFloat();
+        width = sc.nextFloat();
+        height = sc.nextFloat();
+        pricePerGallon = sc.nextFloat();
+        squareFeetPerGallon = sc.nextFloat();
+
+        // Calculate total area of four walls
+        float totalArea = 2 * length * height + 2 * width * height;
+
+        // Calculate number of gallons required (rounded up)
+        int gallons = (int) Math.ceil(totalArea / squareFeetPerGallon);
+
+        // Calculate total cost of paint
+        float totalCost = gallons * pricePerGallon;
+
+        // Display result rounded to 2 decimal places
+        System.out.printf("Total Cost: %.2f\n", totalCost);
+
+        sc.close();
+    }
+}
