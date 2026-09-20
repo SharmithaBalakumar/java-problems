@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        float miles;
+
+        // Read input
+        miles = sc.nextFloat();
+
+        // Calculate distance in yards, feet, and inches
+        float yards = miles * 1760;
+        float feet = miles * 5280;
+        float inches = miles * 63360;
+
+        // Display results
+        System.out.printf("Yards: %.1f\n", yards);
+        System.out.printf("Feet: %.1f\n", feet);
+        System.out.printf("Inches: %.1f\n", inches);
+
+        sc.close();
+    }
+}
