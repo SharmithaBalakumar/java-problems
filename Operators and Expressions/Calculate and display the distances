@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        float miles;
+
+        // Read input
+        miles = sc.nextFloat();
+
+        // Calculate and display distance in kilometers, meters, and centimeters
+        float kilometers = miles * 1.60934f;
+        float meters = kilometers * 1000;
+        float centimeters = meters * 100;
+
+        System.out.printf("Kilometers: %.5f\n", kilometers);
+        System.out.printf("Meters: %.2f\n", meters);
+        System.out.printf("Centimeters: %.1f\n", centimeters);
+
+        sc.close();
+    }
+}   
