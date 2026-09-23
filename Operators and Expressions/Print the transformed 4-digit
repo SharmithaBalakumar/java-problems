@@ -1,0 +1,10 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int input = sc.nextInt();
+        int ans = (((((input/1000)%10)+2)%10)*1000)+(((((input/100)%10)+2)%10)*100)+(((((input/10)%10)+2)%10)*10)+(((((input/1)%10)+2)%10)*1);
+        System.out.println(ans);
+    }
+}
