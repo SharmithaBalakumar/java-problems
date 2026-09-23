@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class HeightConverter {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        int height = input.nextInt();
+        
+        double inches = height * 0.393701;
+        int feet = (int) (inches / 12);
+        inches = inches % 12;
+        
+        System.out.printf("Height in feet and inches: %d' %.1f\"", feet, inches);
+    }
+}
