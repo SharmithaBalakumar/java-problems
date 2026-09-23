@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int sub1, sub2, sub3;
+        sub1 = sc.nextInt();
+        sub2 = sc.nextInt();
+        sub3 = sc.nextInt();
+        int tot = sub1 + sub2 + sub3;
+        float per = (tot / 300.0f) * 100;
+        System.out.printf("Total Marks: %d\nAverage Marks: %.2f", tot, per);
+        sc.close();
+    }
+}
