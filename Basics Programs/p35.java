@@ -6,3 +6,4 @@ public class p2{
     int decre = --num;
     System.out.print(decre);
   }
+}
